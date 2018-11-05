@@ -1,0 +1,129 @@
+/*
+Author: Denny Helander
+Assignment 1 ID1354 5-nov-2018
+
+This is the recipe.css thats brigs style to pancake.html and meatballs.html
+Validated against W3C CSS Validator.
+*/
+
+/*Global settings*/
+body
+{
+	font-size: medium;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: normal;
+	color: gray;
+	background-color: coral;
+	padding: 20px;
+}
+a:hover {
+	color: red;
+	font-weight: bold;
+}
+a:link {
+	color: yellow;
+	
+}
+a:visited {
+	color: purple;
+}
+
+ol, ul {
+	list-style: circle;
+	list-style-position: outside;
+}
+
+p, ul {
+	margin: 20px;
+}
+
+/*Calendar*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: black;
+  padding: 5px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+}
+.calendarTitle {
+  grid-column-start: 1;
+  grid-column-end: 8;
+  text-align: center;
+}
+.calendarDay {
+	text-align: center;
+}
+.calendarItemContent {
+	text-align: center;
+	height: 150px;
+    width: 150px;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*Navbar*/
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+.navbar li:last-child {
+    border-right: none;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: green;
+}
+
+/*Recepies*/
+h1,h2,h3,h4
+{
+	color: #221f1f;
+	background-color: #efefef;
+	font-size: 16pt;
+	font-weight: normal;
+	font-family: "Lucida Sans Unicode", helvetica, arial, sans-serif;
+	
+}
+
+.pageWrapper {
+	background-color: white;
+	padding: 10px;
+}
+
+.Image > img {
+	width: 300px;
+}
+
+.pageWrapper a:link {
+	color: yellow;
+	background-color: coral;
+}
+
